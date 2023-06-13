@@ -10,7 +10,13 @@
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
     "test": "jest",
     "coverage": "jest --coverage --coverage-reporters html",
-    "watch:test": "jest --watchAll"
+    "watch:test": "jest --watchAll",
+    "codeceptjs": "codeceptjs run --steps",
+    "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+    "codeceptjs:ui": "codecept-ui --app",
+    "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+    "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+    "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
   },
   "repository": {
     "type": "git",
@@ -24,18 +30,25 @@
   },
   "homepage": "https://github.com/mjjeon2645/project-setting-sample#readme",
   "devDependencies": {
+    "@codeceptjs/configure": "^0.10.0",
+    "@codeceptjs/ui": "^0.5.0",
+    "@types/node": "^20.3.1",
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.5",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
+    "codeceptjs": "^3.4.1",
     "eslint": "^8.42.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-codeceptjs": "^1.3.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "parcel": "^2.9.2",
+    "playwright": "^1.35.0",
     "process": "^0.11.10",
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.3"
   },
   "dependencies": {
