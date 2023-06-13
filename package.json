@@ -1,0 +1,20 @@
+{
+  "name": "project-setting-sample",
+  "version": "1.0.0",
+  "description": "project-setting-sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjjeon2645/project-setting-sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjjeon2645/project-setting-sample/issues"
+  },
+  "homepage": "https://github.com/mjjeon2645/project-setting-sample#readme"
+}
